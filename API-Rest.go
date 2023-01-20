@@ -31,8 +31,8 @@ var clientes []Cliente
 func main() {
 	r := mux.NewRouter()
 
-	clientes = append(clientes, Cliente{ID: "1", Nome: "Paulo de Tarso", Telefone: "9.1011-1213", Endereco: &Endereco{Rua: "Aos Romanos", Cidade: "Capitulo Nove", Estado: "Predestinacao"}})
-	clientes = append(clientes, Cliente{ID: "2", Nome: "Davi", Telefone: "1.123-456", Endereco: &Endereco{Rua: "Salmos", Cidade: "Capitulo Um", Estado: "Direcao"}})
+	clientes = append(clientes, Cliente{ID: "1", Nome: "Paulo de Tarso", Telefone: "9.1011-1213", Endereco: &Endereco{Rua: "Rua Aos Romanos", Cidade: "Capitulo Nove", Estado: "Predestinacao"}})
+	clientes = append(clientes, Cliente{ID: "2", Nome: "Davi", Telefone: "1.123-456", Endereco: &Endereco{Rua: "Salmos", Cidade: "Rua Capitulo Um", Estado: "Direcao"}})
 	r.HandleFunc("/clientes", getClientes).Methods("GET")
 	r.HandleFunc("/clientes/{id}", getCliente).Methods("GET")
 	r.HandleFunc("/clientes", createCliente).Methods("POST")
