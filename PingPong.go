@@ -17,14 +17,14 @@ func main() {
 
 	wg.Wait()
 	//var entrada string
-	//fmt.Scanln(&entrada)  - Desta forma não seria necessário o WaitGroups
+	//fmt.Scanln(&entrada) - Desta forma não seria necessário o WaitGroups
 
 }
 
 var wg sync.WaitGroup
 
 func Ping(c chan string) {
-	for i := 0; i < 10; i++ { // Também poderia ser infinito, bastaria utilizar "ctrl + c" para sair
+	for i := 0; i < 10; i++ { //Também poderia ser infinito, bastaria utilizar "ctrl + c" para sair
 		c <- "Ping"
 		c <- "Pong"
 	}

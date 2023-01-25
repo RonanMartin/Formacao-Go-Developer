@@ -4,10 +4,10 @@ import "fmt"
 
 func main() {
 
-	fmt.Println(somar(1, 1, 0.5))       // todos os números são somados
-	fmt.Println(subtrair(5, 1, 1, 0.5)) // Do primeiro número serão subtraídos todos os demais
-	fmt.Println(multiplicar(2, 1.25))   // todos os números são multiplicados
-	fmt.Println(dividir(100, 4, 5, 2))  // O primeiro número será dividido pelo próximo, e o resultado será dividido pelo próximo, até o último
+	fmt.Println(somar(1, 1, 0.5))       // Todos os números são somados;
+	fmt.Println(subtrair(5, 1, 1, 0.5)) // Do primeiro número serão subtraídos todos os demais;
+	fmt.Println(multiplicar(2, 1.25))   // Todos os números são multiplicados;
+	fmt.Println(dividir(100, 4, 5, 2))  // O primeiro número será dividido pelo próximo, e o resultado será dividido pelo próximo, até o último.
 }
 
 func somar(numeros ...float64) float64 {
