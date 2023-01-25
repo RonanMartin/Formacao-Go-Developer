@@ -34,7 +34,7 @@ func Ping(c chan string) {
 func imprimir(c chan string) {
 	for i := 0; i < 20; i++ {
 		//msg := <-c
-		//fmt.Println (msg) - Seria outra forma de printar, utilizando o Scanln, conforme comentário sobre WaitGroups.
+		//fmt.Println (msg) - Seria outra forma de printar, utilizando o Scanln, conforme comentário acima sobre WaitGroups.
 		fmt.Println(<-c)
 		time.Sleep(time.Second * 1)
 	}
